@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.page {
+    padding-top: 1.5%;
+}
+
+.title,
+.title-underline {
+    padding-bottom: 2.3px;
+    line-height: 3;
+}
+
+.title-underline {
+    border-bottom: 3px solid #363636;
+}
+
+i {
+    margin: 5px;
+}
+
+.button > i {
+    margin-left: -3px;
+}
