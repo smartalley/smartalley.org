@@ -1,3 +1,10 @@
+* {
+    --dark-blue: #0F2940;
+    --gray: #C6DEE9;
+    --blue: #1356AD;
+    --light-blue: #B3D6FF;
+}
+
 body, html {
     height: 100%;
     width: 100%;
@@ -23,4 +30,13 @@ i {
 
 .button > i {
     margin-left: -3px;
+}
+
+#navbar-logo {
+    max-height: 2.2rem;
+}
+
+.container {
+    max-width: 75%;
+    width: 75%;
 }
