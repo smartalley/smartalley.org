@@ -1,55 +1,18 @@
-/* #banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/assets/images/alley.jpg");
-    filter: blur(2px);
-    background-repeat: repeat-x;
-}
-
 #banner {
-    width: 100%;
-    height: 35%;
-}
-
-#banner #inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    margin: 3%;
     display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-#banner img {
-    width: 100%;
-    height: 50%;
-    object-fit: contain;
-} */
-
-#banner {
-    margin-top: 3%;
-}
-
-#banner .column.is-half {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    text-align: center;
 }
 
 #banner img {
-    border-radius: 4px;
+    width: 60%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#big-logo {
-    width: 65%;
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+#page-area {
+    background-color: white;
+    padding: 2%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

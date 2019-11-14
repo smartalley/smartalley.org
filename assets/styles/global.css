@@ -1,17 +1,7 @@
-* {
-    --dark-blue: #0F2940;
-    --gray: #C6DEE9;
-    --blue: #1356AD;
-    --light-blue: #B3D6FF;
-}
-
 body, html {
     height: 100%;
     width: 100%;
-}
-
-.page {
-    padding-top: 1.5%;
+    background-color: #EFF0E7;
 }
 
 .title,
@@ -32,11 +22,16 @@ i {
     margin-left: -3px;
 }
 
-#navbar-logo {
-    max-height: 2.2rem;
-}
-
 .container {
     max-width: 75%;
     width: 75%;
+}
+
+.navbar-menu, .navbar-start {
+    justify-content: center;
+    margin-right: inherit;
+}
+
+.footer {
+    margin-top: 5%;
 }
