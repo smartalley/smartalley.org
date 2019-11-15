@@ -1,11 +1,19 @@
-#banner-box {
+#top {
+    margin: 3% 0;
+}
+
+#right-side {
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+}
+
+#right-side .button {
+    margin-top: 20px;
 }
 
 #banner {
-    margin: 3%;
+    margin: 2% 0;
     width: 60%;
 }
 
@@ -15,9 +23,10 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#page-area {
-    background-color: white;
-    padding: 2%;
-    box-sizing: border-box;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#we-text {
+    text-align: center;
+}
+
+#about-us {
+    font-weight: 500;
 }

@@ -1,17 +1,8 @@
 body, html {
     height: 100%;
     width: 100%;
-    background-color: #EFF0E7;
-}
-
-.title,
-.title-underline {
-    padding-bottom: 2.3px;
-    line-height: 3;
-}
-
-.title-underline {
-    border-bottom: 3px solid #363636;
+    font-family: "Open Sans";
+    background-color: rgb(250, 250, 250);
 }
 
 i {
@@ -27,11 +18,15 @@ i {
     width: 75%;
 }
 
-.navbar-menu, .navbar-start {
-    justify-content: center;
-    margin-right: inherit;
-}
-
 .footer {
     margin-top: 5%;
+}
+
+.navbar {
+    margin-bottom: 25px;
+}
+
+.light-border-with-radius {
+    border-radius: .25rem;
+    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }

@@ -7,17 +7,40 @@
         <title>{{ page.title }}</title>
 
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
         <link rel="stylesheet" href="//afeld.github.io/emoji-css/emoji.css" />
         <link rel="stylesheet" href="/assets/styles/global.css" />
 
         <script defer src="//use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/" id="navbar-logo">
+                        <img src="/assets/images/logo.png">
+                    </a>
+                </div>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="main navigation">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="/">Home</a>
+                        <a class="navbar-item" href="/mission">How We Help</a>
+                        <a class="navbar-item" href="/team">Team</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         {{ content }}
     </body>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="content has-text-centered">
             <p>Made with <i class="em em-heart"></i> by the <a href="/team">Smart Alley Team</a>.</p>
         </div>
-    </footer>
+    </footer> -->
 </html>
