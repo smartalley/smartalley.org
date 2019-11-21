@@ -1,0 +1,35 @@
+#banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+#writing {
+    font-size: 30px;
+    text-align: center;
+}
+
+#logo-box {
+    width: 60%;
+}
+
+#logo-box img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.module {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.title {
+    font-size: 20px !important;
+    line-height: 2;
+}
