@@ -1,32 +1,52 @@
-#top {
-    margin: 3% 0;
-}
-
-#right-side {
+#banner {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-}
-
-#right-side .button {
-    margin-top: 20px;
-}
-
-#banner {
+    flex-direction: column;
     margin-bottom: 2%;
+}
+
+#writing {
+    font-size: 30px;
+    text-align: center;
+}
+
+#logo-box {
     width: 60%;
 }
 
-#banner img {
+#logo-box img {
     width: 100%;
     height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#we-text {
-    text-align: center;
+.module {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
-#about-us {
-    font-weight: 500;
+.title {
+    font-size: 20px !important;
+    line-height: 2;
+}
+
+#team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#team .card {
+    width: 300px;
+    margin: 10px 4%;
+}
+
+#team figure img {
+    object-fit: cover;
+    object-position: 0;
 }

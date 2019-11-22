@@ -3,67 +3,109 @@ layout: default
 ---
 
 <link rel="stylesheet" href="/assets/styles/home.css" />
+<script src="/assets/scripts/textrotator.js"></script>
 
 <div class="container">
-    <div class="columns" id="top">
-        <div class="column is-half">
-            <img src="/assets/images/street-art.jpg" class="light-border-with-radius">
+    <div id="banner">
+        <div id="logo-box">
+            <img src="/assets/images/logo.png">
         </div>
-        <div class="column" id="right-side">
-            <div id="banner-box">
-                <div id="banner">
-                    <img src="/assets/images/logo.png">
-                </div>
+        <span id="writing"></span>
+    </div>
+    <div class="columns is-variable is-3">
+        <div class="column is-two-thirds">
+            <div class="module">
+                <a class="title" href="#mission">Our Mission</a>
+                <p>Smart Alley devotes itself to fostering a community space focused on revitalization of neglected
+                    alley spaces. What was once used as a vibrant social space, the alleys behind certain neighborhood
+                    homes have become service oriented, bare and abandoned grounds. We travel house to house, meeting
+                    with neighborhood communities and pitching our innovative ideas.
+                    Simple solutions such as murals, community gardens, and tiny libraries can transform alleys into
+                    welcoming gathering spaces.
+                </p>
             </div>
-            <p id="about-us">Smart Alley devotes itself to fostering a community space focused on revitalization of
-                neglected alley
-                spaces. What was once used as a vibrant social space, the alleys behind certain neighborhood homes have
-                become service oriented, bare and abandoned grounds. We travel house to house, meeting with neighborhood
-                communities and pitching our innovative ideas. Simple solutions such as murals, community gardens, and
-                tiny libraries can transform alleys into
-                welcoming gathering spaces.</p>
-            <a href="" class="button is-link is-miedum">How We Help →</a>
+        </div>
+        <div class="column">
+            <div class="module">
+                <a class="title" href="#donate">Donate</a>
+                <p>I know you really really really really really really really really really really really really really
+                    really like Smart Alley. Donate!</p>
+                <br />
+                <a class="button is-dark is-fullwidth">Donate</a>
+            </div>
         </div>
     </div>
-    <h1 class="title is-3" id="we-text">We...</h1>
-    <div class="columns">
-        <div class="column is-one-third">
-            <div class="card light-border-with-radius">
-                <div class="card-content">
-                    <h1 class="title is-5">Build Communities</h1>
-                    <div class="content">
-                        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                            Blah Blah Blah Blah </p>
+    <div class="columns is-variable is-3">
+        <div class="column">
+            <div class="module">
+                <a class="title" href="#help">How We Can Help</a>
+                <div class="columns">
+                    <div class="column">
+                        <span class="subtitle">Give you the tools you need</span>
+                        <p>We want to make every new addition or transformation as easy as possible, provide you with
+                            the tools your community needs. We will petition to the local city council to repave or
+                            rename the alley way. We will provide any resources necessary for community projects.
+                            Through connections and resources, we can even make setting up additional Dwelling Units in
+                            your backyards seem simple. Whatever need you would like met, we will do our best to make
+                            sure that you won’t have to worry about it.</p>
                     </div>
-                    <a href="" class="button is-link">Our Impact →</a>
+                    <div class="column is-narrow">
+                        <img src="/assets/images/street-art.jpg" style="width: 300px">
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-narrow">
+                        <img src="/assets/images/fence-and-garden.jpg" style="width: 300px">
+                    </div>
+                    <div class="column">
+                        <span class="subtitle">Collaborate and Organize</span>
+                        <p>By creating a message board, we can connect all of the members in a neighborhood who wish to
+                            be a part of it. With this, we can post about upcoming events, collaborate with you, and
+                            provide ideas for a better common space. Certain ideas include: implementing free tiny
+                            libraries, community bench gardens, improved lighting, murals, and setting up surveillance
+                            cameras.
+                            <br/>
+                            In the message board, we can also organize neighborhood projects such as cleaning parties,
+                            barbeques, and art projects, all with the final goal of bringing together the people of the
+                            community through a shared common space.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="column is-one-third">
-            <div class="card light-border-with-radius">
-                <div class="card-content">
-                    <h1 class="title is-5">Restore Alleys</h1>
-                    <div class="content">
-                        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                            Blah Blah Blah Blah </p>
+    </div>
+    <div class="columns is-variable is-3">
+        <div class="column">
+            <div class="module">
+                <a class="title" href="#team">Team</a>
+                <div id="team">
+                    {% for person in site.data.staff %}
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/assets/images/staff/{{ person.name | downcase | replace: ' ', '-' }}.jpg"
+                                    alt="{{ person.name }}">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <span class="title is-4">{{ person.name }}</span>
+                                <br/>
+                                <span class="is-6">{{ person.role }}</span>
+                                <br/>
+                                <span class="is-6">Email:</span> {{ person.email }}</span>
+                            </div>
+                        </div>
                     </div>
-                    <a href="" class="button is-link">Our Resources →</a>
+                    {% endfor %}
                 </div>
             </div>
         </div>
-        <div class="column is-one-third">
-            <div class="card light-border-with-radius">
-                <div class="card-content">
-                    <h1 class="title is-5">Prevent Crime</h1>
-                    <div class="content">
-                        <p>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                            Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah
-                            Blah Blah Blah Blah </p>
-                    </div>
-                    <a href="" class="button is-link">Our Mission →</a>
-                </div>
+    </div>
+    <div class="columns is-variable is-3">
+        <div class="column">
+            <div class="module">
+                <a class="title" href="#contact">Contact Us</a>
             </div>
         </div>
     </div>
