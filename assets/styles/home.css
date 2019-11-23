@@ -30,8 +30,9 @@
 }
 
 .title {
-    font-size: 20px !important;
     line-height: 2;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 #team {
@@ -53,4 +54,35 @@
 
 #team .role {
     font-style: italic;
+}
+
+.title-box {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.horiz-center-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-box {
+    margin: 5%;
+    height: 10vw;
+    width: 10vw;
+    background-color: var(--the-dark-blue);
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box i {
+    font-size: 50px;
 }

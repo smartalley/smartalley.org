@@ -5,8 +5,6 @@ const endings = [
     "communities.",	
     "alleys.",	
     "amazing spaces.",	
-    "ADUs.",
-    "community centers.",
     "safe environments.",
     "beautiful art.",
 ]	

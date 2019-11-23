@@ -15,7 +15,9 @@ layout: default
     <div class="columns is-variable is-3">
         <div class="column is-two-thirds">
             <div class="module">
-                <a class="title" href="#mission">Our Mission</a>
+                <div class="title-box">
+                    <a class="title" href="#help">Our Mission</a>
+                </div>
                 <p>Smart Alley devotes itself to fostering a community space focused on revitalization of neglected
                     alley spaces. What was once used as a vibrant social space, the alleys behind certain neighborhood
                     homes have become service oriented, bare and abandoned grounds. We travel house to house, meeting
@@ -27,9 +29,11 @@ layout: default
         </div>
         <div class="column">
             <div class="module">
-                <a class="title" href="#donate">Donate</a>
-                <p>I know you really really really really really really really really really really really really really
-                    really like Smart Alley. Donate!</p>
+                <div class="title-box">
+                    <a class="title" href="#help">Donate</a>
+                </div>
+                <p>Your donation will be allocated to funding community projects. Your donation is highly appreciated by
+                    communities in need.</p>
                 <br />
                 <a class="button is-dark is-fullwidth">Donate</a>
             </div>
@@ -38,10 +42,16 @@ layout: default
     <div class="columns is-variable is-3">
         <div class="column">
             <div class="module">
-                <a class="title" href="#help">How We Can Help</a>
                 <div class="columns">
-                    <div class="column">
-                        <span class="subtitle">Give you the tools you need</span>
+                    <div class="column is-one-third">
+                        <div class="horiz-center-item">
+                            <div class="icon-box">
+                                <i class="em em-toolbox" aria-role="presentation" aria-label="TOOLBOX"></i>
+                            </div>
+                        </div>
+                        <div class="title-box">
+                            <span class="title">Provide Resources</span>
+                        </div>
                         <p>We want to make every new addition or transformation as easy as possible, provide you with
                             the tools your community needs. We will petition to the local city council to repave or
                             rename the alley way. We will provide any resources necessary for community projects.
@@ -49,16 +59,36 @@ layout: default
                             your backyards seem simple. Whatever need you would like met, we will do our best to make
                             sure that you won’t have to worry about it.</p>
                     </div>
-                    <div class="column is-narrow">
-                        <img src="/assets/images/street-art.jpg" style="width: 300px">
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column is-narrow">
-                        <img src="/assets/images/fence-and-garden.jpg" style="width: 300px">
+                    <div class="column is-one-third">
+                        <div class="horiz-center-item">
+                            <div class="icon-box">
+                                <i class="em em-handshake" aria-role="presentation" aria-label="HANDSHAKE"></i>
+                            </div>
+                        </div>
+                        <div class="title-box">
+                            <span class="title">Collaborate & Organize</span>
+                        </div>
+                        <p>By creating a message board, we can connect all of the members in a neighborhood who wish to
+                            be a part of it. With this, we can post about upcoming events, collaborate with you, and
+                            provide ideas for a better common space. Certain ideas include: implementing free tiny
+                            libraries, community bench gardens, improved lighting, murals, and setting up surveillance
+                            cameras.
+                            <br />
+                            <br />
+                            In the message board, we can also organize neighborhood projects such as cleaning parties,
+                            barbeques, and art projects, all with the final goal of bringing together the people of the
+                            community through a shared common space.
+                        </p>
                     </div>
                     <div class="column">
-                        <span class="subtitle">Collaborate and Organize</span>
+                        <div class="horiz-center-item">
+                            <div class="icon-box">
+                                <i class="em em-house_buildings" aria-role="presentation" aria-label=""></i>
+                            </div>
+                        </div>
+                        <div class="title-box">
+                            <span class="title">Some other title</span>
+                        </div>
                         <p>By creating a message board, we can connect all of the members in a neighborhood who wish to
                             be a part of it. With this, we can post about upcoming events, collaborate with you, and
                             provide ideas for a better common space. Certain ideas include: implementing free tiny
@@ -77,7 +107,9 @@ layout: default
     <div class="columns is-variable is-3">
         <div class="column">
             <div class="module">
-                <a class="title" href="#team">Team</a>
+                <div class="title-box">
+                    <a class="title" href="#team">Team</a>
+                </div>
                 <div id="team">
                     {% for person in site.data.staff %}
                     <div class="card">
@@ -105,7 +137,9 @@ layout: default
     <div class="columns is-variable is-3">
         <div class="column">
             <div class="module">
-                <a class="title" href="#contact">Contact Us</a>
+                <div class="title-box">
+                    <a class="title" href="#contact">Contact Us</a>
+                </div>
                 <form action="https://formspree.io/YOUR_FORM_ID" method="POST">
                     <div class="field">
                         <label class="label">Name</label>
@@ -127,7 +161,8 @@ layout: default
                     <div class="field">
                         <label class="label">Message</label>
                         <div class="control">
-                            <textarea class="textarea" placeholder="I want to improve my community with Smart Alley."></textarea>
+                            <textarea class="textarea"
+                                placeholder="I want to improve my community with Smart Alley."></textarea>
                         </div>
                     </div>
 
