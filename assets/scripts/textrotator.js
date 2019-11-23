@@ -5,10 +5,10 @@ const endings = [
     "communities.",	
     "alleys.",	
     "amazing spaces.",	
-    "ADUs.",	
-    "iliads.",	
-    "gabriels.",	
-    "wesleys."	
+    "ADUs.",
+    "community centers.",
+    "safe environments.",
+    "beautiful art.",
 ]	
 let endingIndex = 0	
 

@@ -64,7 +64,7 @@ layout: default
                             provide ideas for a better common space. Certain ideas include: implementing free tiny
                             libraries, community bench gardens, improved lighting, murals, and setting up surveillance
                             cameras.
-                            <br/>
+                            <br />
                             In the message board, we can also organize neighborhood projects such as cleaning parties,
                             barbeques, and art projects, all with the final goal of bringing together the people of the
                             community through a shared common space.
@@ -90,10 +90,10 @@ layout: default
                         <div class="card-content">
                             <div class="content">
                                 <span class="title is-4">{{ person.name }}</span>
-                                <br/>
-                                <span class="is-6">{{ person.role }}</span>
-                                <br/>
-                                <span class="is-6">Email:</span> {{ person.email }}</span>
+                                <br />
+                                <span class="is-6 role">{{ person.role }}</span>
+                                <br />
+                                <a class="is-6" href="mailto:{{ person.email }}">{{ person.email }}</a>
                             </div>
                         </div>
                     </div>
@@ -106,6 +106,37 @@ layout: default
         <div class="column">
             <div class="module">
                 <a class="title" href="#contact">Contact Us</a>
+                <form action="https://formspree.io/YOUR_FORM_ID" method="POST">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="John Alleybuilder">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="john.alleybuilder@gmail.com">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea class="textarea" placeholder="I want to improve my community with Smart Alley."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <input type="submit" value="Submit" class="button is-dark">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
