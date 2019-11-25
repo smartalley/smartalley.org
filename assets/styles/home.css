@@ -39,12 +39,11 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 #team .card {
     width: 300px;
-    margin: 10px 4%;
+    margin: 15px;
 }
 
 #team figure img {
