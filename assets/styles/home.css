@@ -85,3 +85,8 @@ p {
 .icon-box i {
     font-size: 50px;
 }
+
+.navbar {
+    margin-bottom: 25px;
+    background-color: var(--the-dark-blue) !important;
+}

@@ -30,16 +30,6 @@ i {
     color: white;
 }
 
-.navbar {
-    margin-bottom: 25px;
-    background-color: var(--the-dark-blue) !important;
-}
-
 .button {
     background-color: var(--the-dark-blue) !important;
-}
-
-.light-border-with-radius {
-    border-radius: .25rem;
-    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
