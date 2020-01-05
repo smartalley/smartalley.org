@@ -9,6 +9,7 @@
 #writing {
     font-size: 30px;
     text-align: center;
+    color: white;
 }
 
 #logo-box {
@@ -18,7 +19,7 @@
 #logo-box img {
     width: 100%;
     height: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .module {
@@ -27,6 +28,8 @@
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 100%;
+    border-radius: 4px;
+    font-size: 1.2em;
 }
 
 .title {
@@ -68,6 +71,8 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .icon-box {
@@ -89,4 +94,20 @@ p {
 .navbar {
     margin-bottom: 25px;
     background-color: var(--the-dark-blue) !important;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100%;
+}
+
+.text-area .title-box {
+    text-align: inherit;
+}
+
+.text-area p {
+    line-height: 1.5;
 }

@@ -6,9 +6,10 @@ body, html {
     height: 100%;
     width: 100%;
     font-family: "Open Sans";
-    /* background-image: url(/assets/images/street-art-cropped.jpg); */
+    background-image: url(/assets/images/background.png);
     background-color: rgb(241, 241, 241);
     object-fit: cover;
+    object-position: 100% 100%;
 }
 
 i {
