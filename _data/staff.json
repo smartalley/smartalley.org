@@ -1,17 +1,17 @@
 [
     {
         "name": "Iliad Izadi",
-        "role": "Founder & CEO",
+        "role": "Founder",
         "email": "iliad@smartalley.org"
     },
     {
         "name": "Wesley Smith",
-        "role": "CTO",
+        "role": "Software Engineer",
         "email": "wesley@smartalley.org"
     },
     {
         "name": "Gabriel Zwillinger",
-        "role": "CDO",
+        "role": "Graphic Designer",
         "email": "gabriel@smartalley.org"
     }
 ]
