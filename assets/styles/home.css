@@ -112,3 +112,7 @@ p {
 .text-area p {
     line-height: 1.5;
 }
+
+#we img {
+    border-radius: 4px;
+}
