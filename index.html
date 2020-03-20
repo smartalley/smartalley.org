@@ -5,7 +5,7 @@ layout: default
 <link rel="stylesheet" href="/assets/styles/home.css" />
 <script src="/assets/scripts/textrotator.js"></script>
 
-<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+<nav class="navbar is-dark is-hidden-touch" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="/" id="navbar-logo">
@@ -38,13 +38,14 @@ layout: default
         <div class="column is-two-thirds">
             <div class="module">
                 <div class="title-box">
-                    <a class="title" name="mission" href="#mission">Our Mission</a>
+                    <a class="title" name="mission" href="#mission">Our Vision</a>
                 </div>
-                <p>Smart Alley devotes itself to fostering a community space through the revitalization of neglected
+                <p>
+                    Smart Alley devotes itself to fostering a community space through the revitalization of neglected
                     alley spaces. We travel house to house, meeting with neighborhood communities and pitching
-                    innovative ideas on how to restore the alleys. Shared goals, connection, and planning are often all
-                    that neighbors need to empower themselves and work together to build both stronger neighborhood and
-                    a stronger community.
+                    innovative ideas on how to restore their alleyways.
+                    Shared goals, connection, and planning are often all that neighbors need to empower themselves and
+                    work together to build both a stronger neighborhood and a stronger community.
                 </p>
             </div>
         </div>
@@ -55,7 +56,13 @@ layout: default
                 </div>
                 <p>Your donation will be allocated to funding community projects and highly appreciated by our team.</p>
                 <br />
-                <a class="button is-dark is-fullwidth">Donate</a>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_donations" />
+                    <input type="hidden" name="business" value="iliad@smartalley.org" />
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="submit" class="button is-dark is-fullwidth" name="submit" value="Donate"
+                        alt="Donate with PayPal button" title="PayPal - The safer, easier way to pay online!" />
+                </form>
             </div>
         </div>
     </div>
@@ -68,7 +75,7 @@ layout: default
                 <div class="columns">
                     <div class="column is-one-quarter">
                         <div class="horiz-center-item">
-                            <img src="/assets/images/tools.jpg">
+                            <img src="/assets/images/resources.jpeg">
                         </div>
                     </div>
                     <div class="column">
@@ -76,10 +83,13 @@ layout: default
                             <div class="title-box">
                                 <span class="title">Provide Resources</span>
                             </div>
-                            <p>We want to make every new addition or transformation as easy as possible. By funding and
+                            <p>
+                                We want to make every new addition or transformation as easy as possible. By funding and
                                 providing any resources necessary for community projects, we leave the creativity to
-                                you. Whatever needs you would like met, we will do our best to make sure that you won’t
-                                have to worry about it.</p>
+                                you. We will also petition the local city council for tasks such as renaming or repaving
+                                your alley spaces. Whatever needs you would like met, we will make it our task to ensure
+                                that they will be effectively carried out and you will not have to worry about it.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -89,37 +99,44 @@ layout: default
                             <div class="title-box">
                                 <span class="title">Collaborate & Organize</span>
                             </div>
-                            <p>With a message board, we hope to connect with all the neighbors in organizing
-                                neighborhood projects such as cleaning parties, barbeques, and art projects. By hearing
-                                what you desire, we can implement creations such as bench gardens or murals all with the
-                                final goal of bringing together the people of the community through a shared common
-                                space.
+                            <p>
+                                Through the use of a message board, we hope to communicate with you and your community
+                                members regularly in organizing projects or events in your neighborhoods. Hosting events
+                                such as cleaning parties, barbeques, or art projects, will provide a time and place for
+                                the neighborhood community to come together in an effort to clean up your alley spaces.
                             </p>
                         </div>
                     </div>
                     <div class="column is-one-quarter">
                         <div class="horiz-center-item">
-                            <img src="/assets/images/barbecue.jpg">
+                            <img src="/assets/images/collaborate.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-one-quarter">
+                        <div class="horiz-center-item">
+                            <img src="/assets/images/implement.jpeg">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="text-area">
+                            <div class="title-box">
+                                <span class="title">Design & Implement</span>
+                            </div>
+                            <p>
+                                By hearing what you desire, we can work with you to design any lively creations, such as
+                                bench gardens or murals. After designing the creation, we will create and implement it
+                                as an effort to brighten up your alley spaces. With these furnishings, we hope to make
+                                your alley spaces feel like home, acting as a place where you can openly collaborate
+                                with friends, family, and your community.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class="columns is-variable is-3">
-        <div class="column">
-            <div class="module">
-                <div class="title-box">
-                    <a class="title" name="plans" href="#plans">Our Plans to Expand</a>
-                </div>
-                <p><img src="assets/images/future.png" width="300px" style="float: left; padding: 10px">
-                    As our project continues to grow, we hope to expand the revitalization of alleys outside of the D.C.
-                    area and spread it throughout the nation. We also aspire to implement housing options such as
-                    Accessory Dwelling Units in metropolitan areas with high demands of housing as a way to provide for
-                    efficient and affordable housing.</p>
-            </div>
-        </div>
-    </div> -->
     <div class="columns is-variable is-3">
         <div class="column">
             <div class="module">
@@ -156,7 +173,7 @@ layout: default
                 <div class="title-box">
                     <a class="title" name="contact" href="#contact">Contact Us</a>
                 </div>
-                <form action="https://formspree.io/YOUR_FORM_ID" method="POST">
+                <form action="https://formspree.io/iliadizadi@gmail.com" method="POST">
                     <div class="field">
                         <label class="label">Name</label>
                         <div class="control">

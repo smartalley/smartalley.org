@@ -13,11 +13,13 @@
 }
 
 #logo-box {
-    width: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #logo-box img {
-    width: 100%;
+    width: 60%;
     height: auto;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
@@ -42,12 +44,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #team .card {
     width: 300px;
     margin: 15px;
+    border-radius: 4px;
 }
 
 #team figure img {
